@@ -123,6 +123,8 @@ class Lead
             'follow' => 1,
             'trackid' => $this->trackId,
             'referrer' => $this->referrer,
+            'user_ip' => $this->userIp,
+            'user_agent' => $this->userAgent,
         ], $this->params);
     }
 

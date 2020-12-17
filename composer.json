@@ -1,7 +1,7 @@
 {
     "name": "brntsrs/leadbusters-integration",
     "type": "library",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Integration package for Leadbusters API",
     "keywords": [
         "leadbusters",
@@ -11,7 +11,7 @@
         "landing",
         "lead"
     ],
-    "homepage": "https://github.com/brntsrs/leadbusters-integration",
+    "homepage": "https://github.com/brntsrs/leadbusters_integration",
     "license": "MIT",
     "authors": [
         {
@@ -22,8 +22,7 @@
     ],
     "require": {
         "php": ">=5.6",
-        "guzzlehttp/guzzle": "^6.3",
-        "athlon1600/php-proxy": "^5.1"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
         "psr-4": {

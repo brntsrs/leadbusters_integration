@@ -7,24 +7,9 @@ class Facebook extends Pixel
 {
     protected $PARAM = 'facebook_id';
 
-    private $event = 'PageView';
     private $price = null;
     private $currency = null;
     private $advancedMatchingParams = [];
-
-
-    /**
-     * Setting event name
-     *
-     * @param $name
-     * @return $this
-     */
-    public function setEvent($name)
-    {
-        $this->event = $name;
-
-        return $this;
-    }
 
     /**
      * Setting event price

@@ -13,6 +13,8 @@ abstract class Pixel
      * @var Request
      */
     private $request;
+    protected $event = 'PageView';
+    protected $eventPurchase = 'Purchase';
 
     protected $id;
 
@@ -46,6 +48,24 @@ abstract class Pixel
             'id' => $id,
         ]);
         $this->id = $id;
+    }
+
+    /**
+     * Setting event name
+     *
+     * @param $name
+     * @return $this
+     */
+    public function setEvent($name)
+    {
+        $this->event = $name;
+
+        return $this;
+    }
+
+    public function setPurchaseEvent()
+    {
+        $this->setEvent($this->eventPurchase);
     }
 
     /**

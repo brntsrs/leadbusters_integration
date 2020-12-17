@@ -20,10 +20,21 @@ CODE;
     protected function render()
     {
         $id = $this->getId();
+        if ($this->event == $this->eventPurchase) {
+            $addEvent = <<<CODE
+ga('send', 'event', {
+  'eventCategory': 'Products',
+  'eventAction': '{$this->event}'
+});
+CODE;
+        } else {
+            $addEvent = '';
+        }
         return <<<CODE
 <script>
 gtag ('js' , new Date ( ) ) ;
 gtag ('config', '$id') ;
+$addEvent
 </script>
 CODE;
     }
