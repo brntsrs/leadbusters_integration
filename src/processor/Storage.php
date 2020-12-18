@@ -62,9 +62,9 @@ class Storage
     {
         Cookie::clear($param);
         Cookie::clear(Cookie::getPrefix() . $param);
-        if (self::$isSessionStarted) {
-            $_SESSION = [];
-        }
+
+        self::startSession();
+        $_SESSION[$param] = null;
     }
 
     public static function addParam($param, $value)
