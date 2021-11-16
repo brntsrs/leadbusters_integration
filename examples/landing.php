@@ -32,4 +32,9 @@ if (file_exists(dirname(__FILE__) . '/leadbusters')) {
     //Use URL look like https://example.com/landings/offer1/1/?google_id=XYZ-12345678
     //Or add specific pixel ID like next:
     //->addPixel(new Leadbusters\pixel\Google('XYZ-12345678'))
+    ->addPixel(new Leadbusters\pixel\TikTok())
+    //Pixel will catch any TiKTok ID from URL parameter 'tiktok_id'
+    //Use URL look like https://example.com/landings/offer1/1/?tiktok_id=12345678
+    //Or add specific pixel ID like next:
+    //->addPixel(new Leadbusters\pixel\TikTok('12345678'))
     ->run();

@@ -63,9 +63,18 @@ abstract class Pixel
         return $this;
     }
 
-    public function setPurchaseEvent()
+    public function setPurchaseEvent($name)
     {
-        $this->setEvent($this->eventPurchase);
+        $this->eventPurchase = $name;
+
+        return $this;
+    }
+
+    public function switchEventToPurchase()
+    {
+        $this->event = $this->eventPurchase;
+
+        return $this;
     }
 
     /**
