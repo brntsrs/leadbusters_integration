@@ -3,7 +3,7 @@ namespace Leadbusters\pixel;
 
 class TikTok extends Pixel
 {
-    protected $PARAM = 'tiktok_id';
+    protected $PARAM = 'ttpixel';
 
     protected function renderInit()
     {

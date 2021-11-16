@@ -3,7 +3,7 @@ namespace Leadbusters\pixel;
 
 class Google extends Pixel
 {
-    protected $PARAM = 'google_id';
+    protected $PARAM = 'gapixel';
 
     protected function renderInit()
     {

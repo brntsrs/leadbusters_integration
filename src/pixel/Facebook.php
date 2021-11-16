@@ -5,7 +5,7 @@ use Leadbusters\render\Content;
 
 class Facebook extends Pixel
 {
-    protected $PARAM = 'facebook_id';
+    protected $PARAM = 'fbpixel';
 
     private $price = null;
     private $currency = null;
